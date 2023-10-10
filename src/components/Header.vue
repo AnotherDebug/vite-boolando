@@ -62,6 +62,26 @@ header {
 }
 }
 }
+.logo {
+    align-items: center;
+    width: 60%;
+    background-image: url('/src/assets/img/boolean-logo.png');
+    background-size: contain;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.menu-account {
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+    p {
+    padding-left: 10px;
+    i {
+    cursor: pointer;
+}
+}
+}
 }
 
 
