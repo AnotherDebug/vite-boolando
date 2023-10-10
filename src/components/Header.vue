@@ -1,6 +1,33 @@
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
+    data() {
+        return {
+            topbarMenu: [
+                {
+                    href: '#',
+                    text: 'Donna'
+                },
+
+                {
+                    href: '#',
+                    text: 'Uomo'
+                },
+
+                {
+                    href: '#',
+                    text: 'Bambino'
+                }
+
+            ],
+
+            icons: [
+                '<i class="fa-regular fa-user">',
+                '<i class="fa-regular fa-heart"></i>',
+                '<i class="fa-solid fa-bag-shopping"></i>'
+            ]
+        }
+    }
 }
 </script>
 
@@ -11,9 +38,7 @@ export default {
             <div class="topbar d-flex container">
                 <div class="menu d-flex">
                     <ul>
-                        <li><a href="#">Donna</a></li>
-                        <li><a href="#">Uomo</a></li>
-                        <li><a href="#">Bambino</a></li>
+                        <li v-for="(item, index) in topbarMenu" :key="index" ><a :href="item.href">{{item.text}}</a></li>
                     </ul>
                 </div>
                 <div class="logo d-flex"></div>
@@ -29,7 +54,6 @@ export default {
 
 
 <style lang="scss" scoped>
-
 @use "../scss/partials/variables" as *;
 
 header {
@@ -96,4 +120,5 @@ header {
     }
 
 
-}</style>
+}
+</style>
