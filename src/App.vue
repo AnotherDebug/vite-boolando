@@ -1,14 +1,24 @@
 <script>
+import Footer from './components/Footer.vue'
+import Header from './components/Header.vue'
+import Main from './components/Main.vue'
+
 export default {
-name: "App"
+name: "App",
+Header,
+Main,
+Footer
 }
 </script>
 
 
 <template>
- <div>
-  <h1>Boolando</h1>
- </div>
+ 
+ <Header />
+ <Main />
+ <Footer />
+
+
 </template>
 
 
