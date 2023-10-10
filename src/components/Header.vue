@@ -22,9 +22,19 @@ export default {
             ],
 
             icons: [
-                '<i class="fa-regular fa-user">',
-                '<i class="fa-regular fa-heart"></i>',
-                '<i class="fa-solid fa-bag-shopping"></i>'
+                {
+                    icon: 'fa-regular fa-user',
+                    title:'user'
+                },
+                {
+                    icon: 'fa-regular fa-heart',
+                    title:'heart'
+                },
+                {
+                    icon: 'fa-solid fa-bag-shopping',
+                    title:'bag shopping'
+                }
+              
             ]
         }
     }
@@ -43,9 +53,7 @@ export default {
                 </div>
                 <div class="logo d-flex"></div>
                 <div class="menu-account d-flex">
-                    <p><i class="fa-regular fa-user"></i></p>
-                    <p><i class="fa-regular fa-heart"></i></p>
-                    <p><i class="fa-solid fa-bag-shopping"></i></p>
+                    <p v-for="(icon, index) in icons" :key="index"><i :class="[icon.icon]"></i></p>
                 </div>
             </div>
         </div>
