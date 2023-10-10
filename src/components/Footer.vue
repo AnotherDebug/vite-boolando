@@ -38,9 +38,12 @@ export default {
 
 
 <style lang="scss" scoped>
+
+@use "../scss/partials/variables" as *;
+
 footer {
-    color: white;
-    background-color: black;
+    color: $white-color;
+    background-color: $black-color;
 
     .row {
         width: 100%;
@@ -68,7 +71,7 @@ footer {
 
                         a {
                             text-decoration: none;
-                            color: white;
+                            color: $white-color;
                             padding-right: 10px;
                             font-size: 10px;
                         }

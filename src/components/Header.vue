@@ -29,6 +29,9 @@ export default {
 
 
 <style lang="scss" scoped>
+
+@use "../scss/partials/variables" as *;
+
 header {
     margin-bottom: 60px;
 
@@ -37,8 +40,8 @@ header {
         width: 100%;
         top: 0;
         left: 0;
-        background-color: #ff6900;
-        box-shadow: 0 4px 2px 0px gray;
+        background-color: $top-color;
+        box-shadow: 0 4px 2px 0px $gray-color;
         z-index: 2;
     }
 
@@ -61,7 +64,7 @@ header {
                         text-decoration: none;
                         align-items: center;
                         padding-right: 5px;
-                        color: white;
+                        color: $white-color;
                     }
                 }
             }

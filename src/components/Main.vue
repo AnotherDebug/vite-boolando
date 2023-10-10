@@ -108,6 +108,9 @@ export default {
 
 
 <style lang="scss" scoped>
+
+@use "../scss/partials/variables" as *;
+
 main {
     padding-bottom: 50px;
 
@@ -146,7 +149,7 @@ main {
         .heart {
             width: 40px;
             height: 40px;
-            background-color: white;
+            background-color: $white-color;
             color: black;
             text-align: center;
             line-height: 40px;
@@ -157,19 +160,19 @@ main {
             cursor: pointer;
 
             &:hover {
-                color: red;
+                color: $red-color;
             }
         }
 
         .discount {
-            background-color: #ff0000;
+            background-color: $red-color;
             display: inline-block;
             padding: 5px 10px;
             position: absolute;
             left: 5px;
             bottom: 15%;
             font-weight: 600;
-            color: white;
+            color: $white-color;
         }
 
         .trademark,
@@ -182,12 +185,12 @@ main {
         .sustain {
             display: inline-block;
             padding: 5px 10px;
-            background-color: #008000;
+            background-color: $green-color;
             position: absolute;
             left: 14%;
             bottom: 15%;
             font-weight: 600;
-            color: white;
+            color: $white-color;
         }
 
         #sus-only {
