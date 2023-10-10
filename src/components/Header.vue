@@ -6,9 +6,8 @@ export default {
 
 
 <template>
-  
-<header>
-    <div class="top-fixed">
+    <header>
+        <div class="top-fixed">
             <div class="topbar d-flex container">
                 <div class="menu d-flex">
                     <ul>
@@ -25,66 +24,73 @@ export default {
                 </div>
             </div>
         </div>
-</header>
-
+    </header>
 </template>
 
 
 <style lang="scss" scoped>
 header {
     margin-bottom: 60px;
+
     .top-fixed {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #ff6900;
-    box-shadow: 0 4px 2px 0px gray;
-    z-index: 2;
-}
-.topbar {
-    width: 100%;
-    height: 60px;
-    .menu {
-    width: 20%;
-    align-items: center;
-    justify-content: flex-start;
-    ul {
-    list-style: none;
-    li {
-    display: inline-block;
-    a {
-    text-decoration: none;
-    align-items: center;
-    padding-right: 5px;
-    color: white;
-}
-}
-}
-}
-.logo {
-    align-items: center;
-    width: 60%;
-    background-image: url('/src/assets/img/boolean-logo.png');
-    background-size: contain;
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.menu-account {
-    align-items: center;
-    justify-content: flex-end;
-    width: 20%;
-    p {
-    padding-left: 10px;
-    i {
-    cursor: pointer;
-}
-}
-}
-}
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #ff6900;
+        box-shadow: 0 4px 2px 0px gray;
+        z-index: 2;
+    }
+
+    .topbar {
+        width: 100%;
+        height: 60px;
+
+        .menu {
+            width: 20%;
+            align-items: center;
+            justify-content: flex-start;
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        text-decoration: none;
+                        align-items: center;
+                        padding-right: 5px;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .logo {
+            align-items: center;
+            width: 60%;
+            background-image: url('/src/assets/img/boolean-logo.png');
+            background-size: contain;
+            background-size: 20%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .menu-account {
+            align-items: center;
+            justify-content: flex-end;
+            width: 20%;
+
+            p {
+                padding-left: 10px;
+
+                i {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 
 
-}
-
-</style>
+}</style>
