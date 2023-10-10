@@ -1,6 +1,49 @@
 <script>
 export default {
-    name: "Footer"
+    name: "Footer",
+    data() {
+        return {
+            footerMenu: [
+                {
+                    href: "#",
+                    text: "Informazioni legali"
+                },
+
+                {
+                    href: "#",
+                    text: "Informativa sulla privacy"
+                },
+
+                {
+                    href: "#",
+                    text: "Diritto di recesso"
+                },
+            ],
+
+            icons: [
+                {
+                    icon: 'fa-brands fa-square-twitter',
+                    title: 'twitter'
+                },
+                {
+                    icon: 'fa-brands fa-square-facebook',
+                    title: 'facebook'
+                },
+                {
+                    icon: 'fa-brands fa-square-instagram',
+                    title: 'instagram'
+                },
+                {
+                    icon: 'fa-brands fa-square-pinterest',
+                    title: 'pinterest'
+                },
+                {
+                    icon: 'fa-brands fa-youtube',
+                    title: 'youtube'
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -14,19 +57,13 @@ export default {
                 <div class="property">
                     <p class="text-strong">Boolando s.r.l.</p>
                     <ul>
-                        <li><a href="#">Informazioni legali</a></li>
-                        <li><a href="#">Informativa sulla privacy</a></li>
-                        <li><a href="#">Diritto di recesso</a></li>
+                        <li v-for="(item, index) in footerMenu" :key="index"><a :href="item.href">{{ item.text }}</a></li>
                     </ul>
                 </div>
                 <div class="social">
                     <p>Trovaci anche su</p>
                     <ul>
-                        <li><i class="fa-brands fa-square-twitter"></i></li>
-                        <li><i class="fa-brands fa-square-facebook"></i></li>
-                        <li><i class="fa-brands fa-square-instagram"></i></li>
-                        <li><i class="fa-brands fa-square-pinterest"></i></li>
-                        <li><i class="fa-brands fa-youtube"></i></li>
+                        <li v-for="(icon, index) in icons" :key="index"><i :class="[icon.icon]"></i></li>
                     </ul>
                 </div>
             </div>
@@ -38,7 +75,6 @@ export default {
 
 
 <style lang="scss" scoped>
-
 @use "../scss/partials/variables" as *;
 
 footer {
@@ -105,4 +141,5 @@ footer {
             }
         }
     }
-}</style>
+}
+</style>
