@@ -24,17 +24,17 @@ export default {
             icons: [
                 {
                     icon: 'fa-regular fa-user',
-                    title:'user'
+                    title: 'user'
                 },
                 {
                     icon: 'fa-regular fa-heart',
-                    title:'heart'
+                    title: 'heart'
                 },
                 {
                     icon: 'fa-solid fa-bag-shopping',
-                    title:'bag shopping'
+                    title: 'bag shopping'
                 }
-              
+
             ]
         }
     }
@@ -48,7 +48,7 @@ export default {
             <div class="topbar d-flex container">
                 <div class="menu d-flex">
                     <ul>
-                        <li v-for="(item, index) in topbarMenu" :key="index" ><a :href="item.href">{{item.text}}</a></li>
+                        <li v-for="(item, index) in topbarMenu" :key="index"><a :href="item.href">{{ item.text }}</a></li>
                     </ul>
                 </div>
                 <div class="logo d-flex"></div>
