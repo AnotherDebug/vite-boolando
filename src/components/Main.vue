@@ -1,9 +1,15 @@
 <script>
 import CardProduct from './partials/CardProduct.vue';
+import products from '../data/products';
 export default {
     name: "Main",
     components: {
         CardProduct
+    },
+    data() {
+        return {
+            products
+        }
     }
 }
 </script>
