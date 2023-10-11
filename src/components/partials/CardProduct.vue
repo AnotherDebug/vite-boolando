@@ -9,10 +9,10 @@ export default {
             return this.products.modello.toUpperCase();
         },
         priceDiscount() {
-            return `${this.products.lastPrice} €`;
+            return `${this.products.lastPrice.toFixed(2, '0')} €`;
         },
         priceFull() {
-            return `${this.products.fullPrice} €`;
+            return `${this.products.fullPrice.toFixed(2, '0')} €`;
         }
     }
 
