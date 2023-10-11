@@ -19,12 +19,7 @@ export default {
     <main>
         <div class="container">
 
-            <CardProduct />
-            <CardProduct />
-            <CardProduct />
-            <CardProduct />
-            <CardProduct />
-            <CardProduct />
+            <CardProduct v-for="product in products" :key="product.id" :products="product" />
 
         </div>
     </main>
